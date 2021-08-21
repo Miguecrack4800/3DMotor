@@ -34,7 +34,7 @@ class Engine():
         dy = Ingame_point[1] - campos[1]
 
         angx = math.atan2(dx, dz)                 # Get x angle of the object in respect to the player
-        dz = math.sqrt(dz**2 + dx**2)
+        #dz = math.sqrt(dz**2 + dx**2)            # ( Uncomment this line for original problem ) sol: sets the same y angle regardless of x angle.
         angy = math.atan2(-dy, dz)                # Get y angle of the object in respect to the player (-dy because pygame screen cordinates)
         dist = dx**2 + dz**2 + dy**2                 # Get distance ^ 2
 
